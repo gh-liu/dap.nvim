@@ -18,7 +18,6 @@ local events = {
     "thread",
 }
 
----
 local requests = {
     "attach",
     "breakpointLocations", -- capability: supportsBreakpointLocationsRequest
@@ -35,4 +34,30 @@ local requests = {
     "initialize",
     "launch",
     "loadedSources", -- capability: supportsLoadedSourcesRequest
+    "modules", -- capability: supportsModulesRequest
+    "next", -- single thread execution need capability: supportsSingleThreadExecutionRequests
+    "pause",
+    "readMemory", -- capability: supportsReadMemoryRequest
+    "restart", -- capability: supportsRestartRequest
+    "restartFrame", -- capability: supportsRestartFrame
+    "reverseContinue", -- capability: supportsStepBack
+    "scopes",
+    "setBreakpoints",
+    "setDataBreakpoints", -- capability: supportsDataBreakpoints
+    "setExceptionBreakpoints", -- capability: exceptionBreakpointFilters
+    "setExpression", -- capability: supportsSetExpression
+    "setFunctionBreakpoints", -- capability: supportsFunctionBreakpoints
+    "setInstructionBreakpoints", -- capability: supportsInstructionBreakpoints
+    "setVariable",
+    "source",
+    "stackTrace", -- stack frames can be retrieved in a piecemeal way need capability: supportsDelayedStackTraceLoading
+    "stepBack", -- capability: supportsStepBack
+    "stepIn", -- capability: supportsStepInTargetsRequest
+    "stepInTargets", -- capability: supportsStepInTargetsRequest
+    "stepOut",
+    "terminate", -- capability: supportsTerminateRequest
+    "terminateThreads", -- capability: supportsTerminateThreadsRequest
+    "threads",
+    "variables",
+    "writeMemory", -- capability: supportsWriteMemoryRequest
 }
